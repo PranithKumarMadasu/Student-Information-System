@@ -1,0 +1,15 @@
+create database sims;
+use sims;
+
+create table admin(username varchar(40),pwd varchar(40));
+insert into admin values('admin','admin');
+
+create table student(studentid varchar(40) primary key,pwd varchar(40),emailid varchar(40),mobileno varchar(40),address text,branch varchar(40),status int(1));
+
+create table faculty(username  varchar(40) primary key,pwd varchar(40),emailid varchar(40),mobileno varchar(40),address text,branch varchar(40),status int(1));
+
+create table studentmarks(markid varchar(40) primary key, studentid varchar(30),sem varchar(30),subname varchar(40),mid1 varchar(40),mid2 varchar(30),semmarks varchar(40));
+
+ create table attendance(studentid varchar(40),sem varchar(30),subname varchar(30),attper varchar(40));
+
+
